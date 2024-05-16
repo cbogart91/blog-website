@@ -1,0 +1,44 @@
+:root {
+    --background-color: #fff;
+    --text-color: #333;
+    --lrm: 1em;
+  }
+  
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+   
+}
+  
+.dark-mode {
+    --background-color: #333;
+    --text-color: #fff;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+header {
+    background-color: white var(--main-color);
+    margin: 0;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 20px double black;
+}
+
+main {
+    flex-direction: column;
+    padding-left: 20px;
+    overflow-y: scroll;
+    height: calc(100vh - 288px);
+}
+

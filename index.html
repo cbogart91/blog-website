@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+</head>
+
+<header>  
+    <div class="container">
+    <button id='mode-toggle'>Theme Switcher</button>
+    </div>
+</header>
+
+<body>
+<main>
+  <section class="left-panel">
+    <div class="container">
+      <h1>Welcome to my Blog!</h1>
+    </div>
+  </section>
+
+
+<section class="right-panel">
+  <div class="container">
+    <h2>What's on your mind?</h2>
+      <form id='form-blog'>
+        <label for="userName">Username:</label>
+        <input style="width:500px" type="text" id="usernamebox" value=""><br>
+
+        <label for="title">Title:</label>
+        <input style="width:500px" id="titlebox" value=""><br>
+
+        <label for="content">Content:</label>
+        <input style="width:500px" id="contentbox" value=""><br>
+        <button id="submit" value="Submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+</main>
+<script src="./assets/js/blog.js"></script>
+<script src="./assets/js/script.js"></script>
+  </body>
+</html>
