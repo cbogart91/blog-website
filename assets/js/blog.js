@@ -1,27 +1,29 @@
-const user = document.getElementById('usernamebox');
+const userName = document.getElementById('usernamebox');
 const title = document.getElementById('titlebox');
 const content = document.getElementById('contentbox');
 const submitButton = document.getElementById('submit');
 
+
 function saveBlog() {
-    const blogList = {
-        user: user.value,
-        title: title.value,
-        content: content.value,
+    const blogList = JSON.parse(localStorage.getItem('blogList'));
+    const post = {
+        userName: userName.value.trim(),
+        title: title.value.trim(),
+        content: content.value.trim(),
     };
 
-localStorage.setItem('blogList', JSON.stringify(blogList));
-
-if(blogList === null) {
-    localStorage.setItem('saveBlogList', JSON.stringify([post]));
-} else {
-   
+if(blogList === null){
+    localStorage.setItem('blogList', JSON.stringify([post]));
+    blogList.push(post);
+}else{
+    
     localStorage.setItem('blogList', JSON.stringify(blogList));
-}};
+    };
+};
+
 
 document.addEventListener('DOMContentLoaded', function(){
-    document.getElementById('form-blog').addEventListener
-    ('submit', function(event){
+document.getElementById('form-blog').addEventListener('submit', function(event){
         event.preventDefault();
         if (validateForm()){
             saveBlog();
@@ -31,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function validateForm(){
-    const user = document.getElementById('usernamebox');
+    const userName = document.getElementById('usernamebox');
     const title = document.getElementById('titlebox');
     const content = document.getElementById('contentbox');
-    if(user === ''){
+    if(userName === ''){
         alert('Please enter your username! ');
     }
     if(title === ''){

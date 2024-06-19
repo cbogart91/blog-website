@@ -1,12 +1,7 @@
-* {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 .card {
     display: inline-block;
     width: 50%;
     min-height: auto;
-    background: white;
     padding-top: 20px;
     margin: 80px; 
     padding-right: 90px;
@@ -18,7 +13,7 @@
     clear: both;  
   }
 
-#title {
+.userName {
     display: block;
     min-height: 0px;
     margin-top: 10px;
@@ -27,7 +22,7 @@
     color: black;
 }
 
-#content {
+.titlebox {
     display: block;
     min-height: 0px;
     margin-top: 10px;
@@ -36,11 +31,25 @@
     color: black;
 }
 
-#userName {
+.contentbox {
     display: block;
     min-height: 0px;
     margin-top: 10px;
     width: 100%;
     background-color: azure;
     color: black;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color:white;
+}
+
+.dark label {
+    color: white;
 }

@@ -1,35 +1,28 @@
-:root {
-  --background-color: #fff;
-  --text-color: #333;
-  --lrm: 1em;
-}
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
- 
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.dark-mode {
-  --background-color: #333;
-  --text-color: #fff;
-}
-
-
-form {
-  padding: var(--1rm);
+main {
   display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 0 auto;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  height: 50%;
-  width: 75%;
+  border-bottom: 20px black;
 }
 
 h1 {
-  margin: var(--1rm);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+li {
+  margin-top: auto;
+  margin-bottom: 90px;
+  display: block;
+  list-style: none;
 }
 
 header {
@@ -43,11 +36,9 @@ header {
 
 main {
   display: flex;
-  justify-content: center;
-  height: 500px;
-  flex-wrap: nowrap;
-  
+  border-bottom: 20px black;
 }
+
 
 .button-submit {
   border-radius: 5px;
@@ -55,75 +46,12 @@ main {
   align-self: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.light {
+  background-color: white;
+  color: black;
 }
 
-.left-panel, .right-panel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border-bottom-style: solid;
-}
-
-.left-panel {
-  border-right-style: solid;
-}
-
-.entries {
-  flex-direction: column;
-  margin-top: 40px;
-  width: 100%;
-}
-
-.entries article {
-  width: 95%;
-  border: 2px solid;
-}
-
-.entries h3 {
-  border-bottom: 2px solid;
-  padding-left: 5px;
-  margin-left: 5px;
-  width: 95%;
-}
-
-
-
-.list-header {
-  justify-content: space-between;
-  align-items: center;
-}
-
-input, textarea {
-  border-radius: 5px;
-  line-height: 20px;
-  padding: 3px;
-}
-
-label {
-  font-weight: bold;
-}
-
-.list-header div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-right: 2em;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  height: 75%;
-}
-
-.list-header h1 {
-  width: 75%;
-  text-wrap: nowrap;
+.dark {
+  background-color: black;
+  color:white;
 }

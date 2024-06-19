@@ -5,44 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  
+  <link rel="stylesheet" href="./assets/css/form.css">
 </head>
 
+<body class="container light">
 <header>  
+  
     <div class="container">
-    <button id='mode-toggle'>Theme Switcher</button>
+    <button id='theme-switcher'>Theme Switcher</button>
     </div>
 </header>
 
-<body>
+
 <main>
-  <section class="left-panel">
-    <div class="container">
+  <div class="card">
       <h1>Welcome to my Blog!</h1>
     </div>
-  </section>
+ 
 
 
-<section class="right-panel">
-  <div class="container">
+<div class="card">
     <h2>What's on your mind?</h2>
-      <form id='form-blog'>
-        <label for="userName">Username:</label>
+
+      <form id='form-blog' name="form-blog">
+        <label for="userName">Username:</label><br>
         <input style="width:500px" type="text" id="usernamebox" value=""><br>
 
-        <label for="title">Title:</label>
+        <label for="title">Title:</label><br>
         <input style="width:500px" id="titlebox" value=""><br>
 
-        <label for="content">Content:</label>
-        <input style="width:500px" id="contentbox" value=""><br>
-        <button id="submit" value="Submit">Submit</button>
+        <label for="content">Content:</label><br>
+        <textarea style="width:500px" id="contentbox" value=""></textarea>
+
+        <button id="submit" value="submit">Submit</button>
+
     </form>
   </div>
-</section>
+
 
 </main>
-<script src="./assets/js/blog.js"></script>
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/blog.js"></script>
+
   </body>
 </html>
